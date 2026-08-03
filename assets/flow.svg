@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="what I build">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f1a"/>
+      <stop offset="100%" stop-color="#100c1d"/>
+    </linearGradient>
+    <linearGradient id="wire" gradientUnits="userSpaceOnUse" x1="180" y1="0" x2="300" y2="0">
+      <stop offset="0%" stop-color="#6E44FF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6E44FF" stop-opacity="0.6"/>
+    </linearGradient>
+    <radialGradient id="dot">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#6E44FF"/>
+      <stop offset="100%" stop-color="#6E44FF" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      text { font-family: ui-monospace,'JetBrains Mono','SFMono-Regular',Menlo,monospace; }
+      .key { fill: #cdd6f4; font-size: 16px; font-weight: 600; letter-spacing: 1px; }
+      .val { fill: #8f9ac2; font-size: 14px; }
+      .row { animation: in .8s cubic-bezier(.2,.7,.3,1) both; }
+      .r1 { animation-delay: .1s } .r2 { animation-delay: .25s } .r3 { animation-delay: .4s }
+      .r4 { animation-delay: .55s } .r5 { animation-delay: .7s }
+      @keyframes in { from { transform: translateX(-12px) } to { transform: translateX(0) } }
+      @media (prefers-reduced-motion: reduce) { .row { animation:none } }
+    </style>
+  </defs>
+
+  <rect width="1000" height="300" rx="18" fill="url(#card)"/>
+  <rect width="1000" height="300" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <g class="row r1">
+    <text class="key" x="46" y="66" text-anchor="end" style="text-anchor:end" transform="translate(120,0)">frontend</text>
+    <line x1="180" y1="61" x2="300" y2="61" stroke="url(#wire)" stroke-width="2" stroke-dasharray="4 6"/>
+    <circle r="4" fill="url(#dot)"><animate attributeName="cx" values="180;300" dur="2.6s" begin="0s" repeatCount="indefinite"/><animate attributeName="cy" values="61;61" dur="2.6s" repeatCount="indefinite"/></circle>
+    <text class="val" x="320" y="66">interfaces that make dense data feel obvious</text>
+  </g>
+
+  <g class="row r2">
+    <text class="key" x="46" y="116" transform="translate(120,0)" style="text-anchor:end">backend</text>
+    <line x1="180" y1="111" x2="300" y2="111" stroke="url(#wire)" stroke-width="2" stroke-dasharray="4 6"/>
+    <circle r="4" fill="url(#dot)"><animate attributeName="cx" values="180;300" dur="2.6s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="cy" values="111;111" dur="2.6s" repeatCount="indefinite"/></circle>
+    <text class="val" x="320" y="116">services and APIs that stay boring under load</text>
+  </g>
+
+  <g class="row r3">
+    <text class="key" x="46" y="166" transform="translate(120,0)" style="text-anchor:end">data</text>
+    <line x1="180" y1="161" x2="300" y2="161" stroke="url(#wire)" stroke-width="2" stroke-dasharray="4 6"/>
+    <circle r="4" fill="url(#dot)"><animate attributeName="cx" values="180;300" dur="2.6s" begin="1s" repeatCount="indefinite"/><animate attributeName="cy" values="161;161" dur="2.6s" repeatCount="indefinite"/></circle>
+    <text class="val" x="320" y="166">charts, models and numbers that must be right</text>
+  </g>
+
+  <g class="row r4">
+    <text class="key" x="46" y="216" transform="translate(120,0)" style="text-anchor:end">cloud</text>
+    <line x1="180" y1="211" x2="300" y2="211" stroke="url(#wire)" stroke-width="2" stroke-dasharray="4 6"/>
+    <circle r="4" fill="url(#dot)"><animate attributeName="cx" values="180;300" dur="2.6s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="cy" values="211;211" dur="2.6s" repeatCount="indefinite"/></circle>
+    <text class="val" x="320" y="216">infrastructure written down, never clicked</text>
+  </g>
+
+  <g class="row r5">
+    <text class="key" x="46" y="266" transform="translate(120,0)" style="text-anchor:end">ai</text>
+    <line x1="180" y1="261" x2="300" y2="261" stroke="url(#wire)" stroke-width="2" stroke-dasharray="4 6"/>
+    <circle r="4" fill="url(#dot)"><animate attributeName="cx" values="180;300" dur="2.6s" begin="2s" repeatCount="indefinite"/><animate attributeName="cy" values="261;261" dur="2.6s" repeatCount="indefinite"/></circle>
+    <text class="val" x="320" y="266">tooling that removes the tedious parts</text>
+  </g>
+</svg>
