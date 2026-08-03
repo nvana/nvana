@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 500" width="780" height="500" role="img" aria-label="orbiting tech constellation">
+  <defs>
+    <radialGradient id="bg">
+      <stop offset="0%" stop-color="#1a1136"/>
+      <stop offset="60%" stop-color="#0c1020"/>
+      <stop offset="100%" stop-color="#080b14"/>
+    </radialGradient>
+    <radialGradient id="core">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#8f6bff"/>
+      <stop offset="70%" stop-color="#6E44FF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#6E44FF" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip"><rect width="780" height="500" rx="18"/></clipPath>
+    <style>
+      text { font-family: ui-monospace,'JetBrains Mono','SFMono-Regular',Menlo,monospace; }
+      .chip { fill:#dbe2f7; font-size:10px; letter-spacing:.5px }
+      .cap  { fill:#6c769b; font-size:10px; letter-spacing:3px }
+      @media (prefers-reduced-motion: reduce) { animateTransform { display:none } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="780" height="500" fill="url(#bg)"/>
+
+    <!-- starfield -->
+    <g fill="#ffffff">
+      <circle cx="70"  cy="80"  r="1.1" opacity=".5"><animate attributeName="opacity" values=".15;.7;.15" dur="5s" repeatCount="indefinite"/></circle>
+      <circle cx="700" cy="120" r="1.3" opacity=".4"><animate attributeName="opacity" values=".1;.6;.1" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="120" cy="400" r="1.0" opacity=".4"><animate attributeName="opacity" values=".1;.55;.1" dur="6s" repeatCount="indefinite"/></circle>
+      <circle cx="660" cy="410" r="1.4" opacity=".35"><animate attributeName="opacity" values=".1;.6;.1" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="390" cy="40"  r="1.0" opacity=".35"><animate attributeName="opacity" values=".1;.5;.1" dur="4.5s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- core -->
+    <circle cx="390.0" cy="250.0" r="62" fill="url(#core)">
+      <animate attributeName="r" values="58;66;58" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="390.0" cy="250.0" r="17" fill="#0e1424" stroke="#8f6bff" stroke-opacity=".8"/>
+    <circle cx="390.0" cy="250.0" r="6" fill="#ffffff">
+      <animate attributeName="fill-opacity" values="1;.55;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="390.0" cy="250.0" r="17" fill="none" stroke="#8f6bff" stroke-width="1.5">
+      <animate attributeName="r" values="17;120" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".7;0" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="390.0" cy="250.0" r="17" fill="none" stroke="#0A66C2" stroke-width="1.5">
+      <animate attributeName="r" values="17;120" dur="4.5s" begin="2.25s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".7;0" dur="4.5s" begin="2.25s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- ring 1 -->
+    <circle cx="390.0" cy="250.0" r="100" fill="none" stroke="#7f8cff" stroke-opacity=".14" stroke-width="1" stroke-dasharray="2 7"/>
+    <g class="spin">
+      <animateTransform attributeName="transform" type="rotate" from="0 390.0 250.0" to="360 390.0 250.0" dur="26s" repeatCount="indefinite"/>
+      <g transform="translate(390.0 150.0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="26s" repeatCount="indefinite"/>
+          <rect x="-22.5" y="-11.0" width="45.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#3178C6" stroke-opacity=".55"/>
+          <circle cx="-12.5" cy="0" r="3.4" fill="#3178C6"><animate attributeName="fill-opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
+          <text x="-3.0" y="3.5" class="chip">ts</text>
+        </g>
+      </g>
+      <g transform="translate(490.0 250.0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="26s" repeatCount="indefinite"/>
+          <rect x="-22.5" y="-11.0" width="45.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#FFD343" stroke-opacity=".55"/>
+          <circle cx="-12.5" cy="0" r="3.4" fill="#FFD343"><animate attributeName="fill-opacity" values="1;.35;1" dur="2.7s" repeatCount="indefinite"/></circle>
+          <text x="-3.0" y="3.5" class="chip">py</text>
+        </g>
+      </g>
+      <g transform="translate(390.0 350.0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="26s" repeatCount="indefinite"/>
+          <rect x="-31.5" y="-11.0" width="63.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#DC322F" stroke-opacity=".55"/>
+          <circle cx="-21.5" cy="0" r="3.4" fill="#DC322F"><animate attributeName="fill-opacity" values="1;.35;1" dur="3.0s" repeatCount="indefinite"/></circle>
+          <text x="-12.0" y="3.5" class="chip">scala</text>
+        </g>
+      </g>
+      <g transform="translate(290.0 250.0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="26s" repeatCount="indefinite"/>
+          <rect x="-22.5" y="-11.0" width="45.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#7F52FF" stroke-opacity=".55"/>
+          <circle cx="-12.5" cy="0" r="3.4" fill="#7F52FF"><animate attributeName="fill-opacity" values="1;.35;1" dur="3.3s" repeatCount="indefinite"/></circle>
+          <text x="-3.0" y="3.5" class="chip">kt</text>
+        </g>
+      </g>
+    </g>
+    <!-- ring 2 -->
+    <circle cx="390.0" cy="250.0" r="158" fill="none" stroke="#7f8cff" stroke-opacity=".14" stroke-width="1" stroke-dasharray="2 7"/>
+    <g class="spin">
+      <animateTransform attributeName="transform" type="rotate" from="0 390.0 250.0" to="-360 390.0 250.0" dur="38s" repeatCount="indefinite"/>
+      <g transform="translate(433.7 98.2)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="38s" repeatCount="indefinite"/>
+          <rect x="-31.5" y="-11.0" width="63.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#61DAFB" stroke-opacity=".55"/>
+          <circle cx="-21.5" cy="0" r="3.4" fill="#61DAFB"><animate attributeName="fill-opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
+          <text x="-12.0" y="3.5" class="chip">react</text>
+        </g>
+      </g>
+      <g transform="translate(547.9 244.6)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="38s" repeatCount="indefinite"/>
+          <rect x="-25.5" y="-11.0" width="51.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#4FC08D" stroke-opacity=".55"/>
+          <circle cx="-15.5" cy="0" r="3.4" fill="#4FC08D"><animate attributeName="fill-opacity" values="1;.35;1" dur="2.7s" repeatCount="indefinite"/></circle>
+          <text x="-6.0" y="3.5" class="chip">vue</text>
+        </g>
+      </g>
+      <g transform="translate(443.9 398.5)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="38s" repeatCount="indefinite"/>
+          <rect x="-28.5" y="-11.0" width="57.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#5FA04E" stroke-opacity=".55"/>
+          <circle cx="-18.5" cy="0" r="3.4" fill="#5FA04E"><animate attributeName="fill-opacity" values="1;.35;1" dur="3.0s" repeatCount="indefinite"/></circle>
+          <text x="-9.0" y="3.5" class="chip">node</text>
+        </g>
+      </g>
+      <g transform="translate(265.4 347.2)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="38s" repeatCount="indefinite"/>
+          <rect x="-31.5" y="-11.0" width="63.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#F05138" stroke-opacity=".55"/>
+          <circle cx="-21.5" cy="0" r="3.4" fill="#F05138"><animate attributeName="fill-opacity" values="1;.35;1" dur="3.3s" repeatCount="indefinite"/></circle>
+          <text x="-12.0" y="3.5" class="chip">swift</text>
+        </g>
+      </g>
+      <g transform="translate(259.1 161.5)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="38s" repeatCount="indefinite"/>
+          <rect x="-22.5" y="-11.0" width="45.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#9B7BFF" stroke-opacity=".55"/>
+          <circle cx="-12.5" cy="0" r="3.4" fill="#9B7BFF"><animate attributeName="fill-opacity" values="1;.35;1" dur="3.6s" repeatCount="indefinite"/></circle>
+          <text x="-3.0" y="3.5" class="chip">c#</text>
+        </g>
+      </g>
+    </g>
+    <!-- ring 3 -->
+    <circle cx="390.0" cy="250.0" r="214" fill="none" stroke="#7f8cff" stroke-opacity=".14" stroke-width="1" stroke-dasharray="2 7"/>
+    <g class="spin">
+      <animateTransform attributeName="transform" type="rotate" from="0 390.0 250.0" to="360 390.0 250.0" dur="54s" repeatCount="indefinite"/>
+      <g transform="translate(390.0 36.0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="54s" repeatCount="indefinite"/>
+          <rect x="-25.5" y="-11.0" width="51.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#FF9900" stroke-opacity=".55"/>
+          <circle cx="-15.5" cy="0" r="3.4" fill="#FF9900"><animate attributeName="fill-opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
+          <text x="-6.0" y="3.5" class="chip">aws</text>
+        </g>
+      </g>
+      <g transform="translate(575.3 143.0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="54s" repeatCount="indefinite"/>
+          <rect x="-31.5" y="-11.0" width="63.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#3AA0FF" stroke-opacity=".55"/>
+          <circle cx="-21.5" cy="0" r="3.4" fill="#3AA0FF"><animate attributeName="fill-opacity" values="1;.35;1" dur="2.7s" repeatCount="indefinite"/></circle>
+          <text x="-12.0" y="3.5" class="chip">azure</text>
+        </g>
+      </g>
+      <g transform="translate(575.3 357.0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="54s" repeatCount="indefinite"/>
+          <rect x="-43.5" y="-11.0" width="87.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#A17BFF" stroke-opacity=".55"/>
+          <circle cx="-33.5" cy="0" r="3.4" fill="#A17BFF"><animate attributeName="fill-opacity" values="1;.35;1" dur="3.0s" repeatCount="indefinite"/></circle>
+          <text x="-24.0" y="3.5" class="chip">terraform</text>
+        </g>
+      </g>
+      <g transform="translate(390.0 464.0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="54s" repeatCount="indefinite"/>
+          <rect x="-34.5" y="-11.0" width="69.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#2496ED" stroke-opacity=".55"/>
+          <circle cx="-24.5" cy="0" r="3.4" fill="#2496ED"><animate attributeName="fill-opacity" values="1;.35;1" dur="3.3s" repeatCount="indefinite"/></circle>
+          <text x="-15.0" y="3.5" class="chip">docker</text>
+        </g>
+      </g>
+      <g transform="translate(204.7 357.0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="54s" repeatCount="indefinite"/>
+          <rect x="-40.5" y="-11.0" width="81.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#7FB2E5" stroke-opacity=".55"/>
+          <circle cx="-30.5" cy="0" r="3.4" fill="#7FB2E5"><animate attributeName="fill-opacity" values="1;.35;1" dur="3.6s" repeatCount="indefinite"/></circle>
+          <text x="-21.0" y="3.5" class="chip">postgres</text>
+        </g>
+      </g>
+      <g transform="translate(204.7 143.0)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="54s" repeatCount="indefinite"/>
+          <rect x="-25.5" y="-11.0" width="51.0" height="22" rx="11.0" fill="#0e1424" fill-opacity=".92" stroke="#F05033" stroke-opacity=".55"/>
+          <circle cx="-15.5" cy="0" r="3.4" fill="#F05033"><animate attributeName="fill-opacity" values="1;.35;1" dur="3.9s" repeatCount="indefinite"/></circle>
+          <text x="-6.0" y="3.5" class="chip">git</text>
+        </g>
+      </g>
+    </g>
+
+    <text class="cap" x="756" y="30" text-anchor="end">EVERYTHING ORBITS THE PROBLEM</text>
+
+    <rect width="780" height="500" rx="18" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+  </g>
+</svg>
