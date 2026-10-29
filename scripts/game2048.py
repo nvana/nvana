@@ -267,7 +267,7 @@ def readme_block(state):
         "a bot plays your move and redraws this board in ~30s.",
         "",
         f"<sub>last moves: {recent}</sub><br/>",
-        f"<sub>top players: {leaders} · {state['total_moves']} moves so far</sub><br/>",
+        f"<sub>top players: {leaders} · {state['total_moves']} move{'s' * (state['total_moves'] != 1)} so far</sub><br/>",
         f"<sub>finished games: {finished}</sub>",
         "",
         "</div>",

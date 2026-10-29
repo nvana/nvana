@@ -21,7 +21,7 @@ Full-stack, end to end — interfaces that make dense data feel obvious, service
 a bot plays your move and redraws this board in ~30s.
 
 <sub>last moves: [nvana](https://github.com/nvana) ← +4</sub><br/>
-<sub>top players: [nvana](https://github.com/nvana) **1** · 1 moves so far</sub><br/>
+<sub>top players: [nvana](https://github.com/nvana) **1** · 1 move so far</sub><br/>
 <sub>finished games: none yet</sub>
 
 </div>
