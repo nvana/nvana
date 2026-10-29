@@ -1,42 +1,55 @@
 {
- "best": 0,
- "total_moves": 0,
- "players": {},
- "recent": [],
+ "best": 4,
+ "total_moves": 1,
+ "players": {
+  "nvana": 1
+ },
+ "recent": [
+  {
+   "player": "nvana",
+   "move": "left",
+   "gain": 4
+  }
+ ],
  "finished": [],
  "game": 1,
  "board": [
   [
+   4,
    0,
    0,
-   2,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
    2
-  ],
+  ]
+ ],
+ "score": 4,
+ "moves": 1,
+ "over": false,
+ "spawn": [
+  3,
+  3
+ ],
+ "merged": [
   [
-   0,
-   0,
-   0,
-   0
-  ],
-  [
-   0,
-   0,
-   0,
-   0
-  ],
-  [
-   0,
-   0,
    0,
    0
   ]
- ],
- "score": 0,
- "moves": 0,
- "over": false,
- "spawn": [
-  0,
-  3
- ],
- "merged": []
+ ]
 }

@@ -11,7 +11,7 @@ Full-stack, end to end — interfaces that make dense data feel obvious, service
 <!-- 2048:start -->
 <div align="center">
 
-<img src="./assets/2048.svg?v=1-0" width="384" alt="community 2048 board" />
+<img src="./assets/2048.svg?v=1-1" width="384" alt="community 2048 board" />
 
 <a href="https://github.com/nvana/nvana/issues/new?title=2048%7Cup&body=Just+hit+%2A%2ASubmit+new+issue%2A%2A+below+%E2%80%94+a+bot+will+play+your+move+on+the+shared+board+and+close+this+issue+in+about+30+seconds."><img src="./assets/2048-key-up.svg" width="56" alt="up" /></a>
 <br/>
@@ -20,8 +20,8 @@ Full-stack, end to end — interfaces that make dense data feel obvious, service
 **one board, everyone plays.** click an arrow → GitHub opens an issue → hit *Submit* →
 a bot plays your move and redraws this board in ~30s.
 
-<sub>last moves: no moves yet — be the first</sub><br/>
-<sub>top players: — · 0 moves so far</sub><br/>
+<sub>last moves: [nvana](https://github.com/nvana) ← +4</sub><br/>
+<sub>top players: [nvana](https://github.com/nvana) **1** · 1 moves so far</sub><br/>
 <sub>finished games: none yet</sub>
 
 </div>
