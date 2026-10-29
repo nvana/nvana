@@ -1,0 +1,42 @@
+{
+ "best": 0,
+ "total_moves": 0,
+ "players": {},
+ "recent": [],
+ "finished": [],
+ "game": 1,
+ "board": [
+  [
+   0,
+   0,
+   2,
+   2
+  ],
+  [
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0
+  ]
+ ],
+ "score": 0,
+ "moves": 0,
+ "over": false,
+ "spawn": [
+  0,
+  3
+ ],
+ "merged": []
+}

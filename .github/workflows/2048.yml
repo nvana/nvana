@@ -1,0 +1,44 @@
+name: 2048
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  move:
+    if: startsWith(github.event.issue.title, '2048|')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Play the move
+        # Issue fields go through env, never straight into the script.
+        env:
+          MOVE: ${{ github.event.issue.title }}
+          PLAYER: ${{ github.event.issue.user.login }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Several people can play at once: replay on top of the latest board until the push lands.
+          for attempt in 1 2 3 4 5 6; do
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            python3 scripts/game2048.py move > "$RUNNER_TEMP/reply.md"
+            git add README.md assets game
+            git diff --cached --quiet && break
+            git commit -q -m "2048: move by $PLAYER"
+            git push -q origin HEAD:main && break
+            sleep $((RANDOM % 5 + attempt))
+          done
+
+      - name: Reply and close
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/reply.md"
+          gh issue close "$ISSUE"
